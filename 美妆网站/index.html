@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+        .box{
+            width: 1600px;
+            height: 5000px;
+            margin: 0 auto;
+        }
+        .title{
+            width: 1600px;
+            height: 60px;
+            /* border: 1px solid black; */
+        }
+        .fl{
+            float: left;
+        }
+        .titleBox{
+            width: 1000px;
+            height: 30px;
+            background-color: black;
+            color: white;
+            border-radius: 25px;
+            text-align: center;
+            line-height: 25px;
+            margin: 10px 0 0 0 ;
+        }
+        .img1{
+            height: 50px;
+        }
+        #sou{
+            border-radius: 20px;
+            height: 23px;
+            margin: 12px;
+            font-size: 16px;
+        }
+        .title2{
+            transition: .3s;
+            width: 1600px;
+            /* border: 1px solid black; */
+            height: 50px;
+            /* overflow: hidden; */
+        }
+        .title2 .title2div{
+            float: left;
+            margin: 15px;
+            height: 30px;
+            
+        }
+        .banner{
+            height: 600px;
+            transition: .5s;
+            /* background-image: url(banner.avif); */
+        }
+        .banner:hover{
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+        .slt{
+            width: 99%;
+            height: 420px;
+            /* border: 1px solid black; */
+            background-color: white;
+            position: absolute;
+            top: 100px;
+        }
+        .img2{
+            width: 400px;                                                        
+            height: 220px;
+            transition: .3s;
+        }
+        .img2:hover{
+            transform: scale(1.1);
+        }
+        .s1{
+            float: left;
+            margin: 40px;
+            line-height: 30px;
+        }
+
+        .box2{
+            text-align: center;
+            margin-top: 40px;
+        }
+        .title2div:hover{
+            text-decoration: underline;
+        }
+        .body2img{
+            position: relative;
+            top: 400px;
+        }
+        .body3img{
+            position: relative;
+            top: 400px;
+        }
+        .body4img{
+            position: relative;
+            top: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="title">
+            <img src="logo.png" alt="" class="fl img1">
+            <div class="titleBox fl">
+                <span class="titText">无瑕粉底液2.0，买30ML到手60ML * 赠品细则详情点击查看</span>
+            </div>
+            <input type="text" placeholder="&nbsp;🔍︎请输入搜索词" id="sou">
+            <span>🥼</span>&emsp;
+            <span>👜</span>
+        </div>
+
+        <div class="title2">
+            <div class="title2div xinpt1" style="margin-left: 420px;" >新品推荐</div>
+            <div class="slt1 slt xinpt" style="display: none;">
+                <div class="s1 xinpt" style="margin-left: 120px;">
+                    <img src="s1.avif" alt="" class="img2">
+                    <p><b>定妆紫白饼</b></p>
+                    <p>去油更去黄 16H控妆无粉感</p>
+                    <p><u><b><a href="index2.html">即刻选购</a></b></u></p>
+                </div>
+                <div class="s1 xinpt">
+                    <img src="s1_2.avif" alt="" class="img2">
+                    <p><b>轻缎光 【大子弹头】</b></p>
+                    <p>更大*更有光 新色来袭</p>
+                    <p><u><b><a href="index2.html">即刻选购</a></b></u></p>
+                </div>
+                <div class="s1 xinpt">
+                    <img src="s1_3.avif" alt="" class="img2">
+                    <p><b>[无酒精] 爆改喷</b></p>
+                    <p>改妆不花妆一喷多用</p>
+                    <p><u><b><a href="index2.html">即刻选购</a></b></u></p>
+                </div>
+            </div>
+            <div class="title2div xinpt2">明星产品</div>
+
+            
+            <div class="slt2 slt xinpt" style="display: none;">
+                <div class="s1 xinpt" style="margin-left: 120px;">
+                    <img src="s2_1.avif" alt="" class="img2">
+                    <p><b>定妆紫白饼</b></p>
+                    <p>去油更去黄 16H控妆无粉感</p>
+                    <p><u><b><a href="index2.html">即刻选购</a></b></u></p>
+                </div>
+                <div class="s1 xinpt">
+                    <img src="s2_2.avif" alt="" class="img2">
+                    <p><b>轻缎光 【大子弹头】</b></p>
+                    <p>更大*更有光 新色来袭</p>
+                    <p><u><b><a href="index2.html">即刻选购</a></b></u></p>
+                </div>
+                <div class="s1 xinpt">
+                    <img src="s2_3.avif" alt="" class="img2">
+                    <p><b>[无酒精] 爆改喷</b></p>
+                    <p>改妆不花妆一喷多用</p>
+                    <p><u><b><a href="index2.html">即刻选购</a></b></u></p>
+                </div>
+            </div>
+            <div class="title2div xinpt3">唇妆底妆</div>
+            
+            <div class="slt3 slt xinpt" style="display: none;">
+                <div class="s1 xinpt" style="margin-left: 120px;">
+                    <img src="s3_1.avif" alt="" class="img2">
+                    <p><b>定妆紫白饼</b></p>
+                    <p>去油更去黄 16H控妆无粉感</p>
+                    <p><u><b><a href="index2.html">即刻选购</a></b></u></p>
+                </div>
+                <div class="s1 xinpt">
+                    <img src="s3_2.avif" alt="" class="img2">
+                    <p><b>轻缎光 【大子弹头】</b></p>
+                    <p>更大*更有光 新色来袭</p>
+                    <p><u><b><a href="index2.html">即刻选购</a></b></u></p>
+                </div>
+                <div class="s1 xinpt">
+                    <img src="s3_3.avif" alt="" class="img2">
+                    <p><b>[无酒精] 爆改喷</b></p>
+                    <p>改妆不花妆一喷多用</p>
+                    <p><u><b><a href="index2.html">即刻选购</a></b></u></p>
+                </div>
+            </div>
+            <div class="title2div xinpt4">眼妆</div>
+
+            <div class="slt4 slt xinpt" style="display: none;">
+                <div class="s1 xinpt" style="margin-left: 120px;">
+                    <img src="s2_1.avif" alt="" class="img2">
+                    <p><b>定妆紫白饼</b></p>
+                    <p>去油更去黄 16H控妆无粉感</p>
+                  <p><u><b><a href="index2.html">即刻选购</a></b></u></p>
+                </div>
+                <div class="s1 xinpt">
+                    <img src="s2_2.avif" alt="" class="img2">
+                    <p><b>轻缎光 【大子弹头】</b></p>
+                    <p>更大*更有光 新色来袭</p>
+                  <p><u><b><a href="index2.html">即可选购</a></b></u></p>
+                </div>
+                <div class="s1 xinpt">
+                    <img src="s2_3.avif" alt="" class="img2">
+                    <p><b>[无酒精] 爆改喷</b></p>
+                    <p>改妆不花妆一喷多用</p>
+                  <p><u><b><a href="index2.html">即可选购</a></b></u></p>
+                </div>
+            </div>
+            <div class="title2div xinpt5">护肤</div>
+
+            <div class="slt5 slt xinpt" style="display: none;">
+                <div class="s1 xinpt" style="margin-left: 120px;">
+                    <img src="s4_1.avif" alt="" class="img2">
+                    <p><b>定妆紫白饼</b></p>
+                    <p>去油更去黄 16H控妆无粉感</p>
+                  <p><u><b><a href="index2.html">即可选购</a></b></u></p>
+                </div>
+                <div class="s1 xinpt">
+                    <img src="s4_2.avif" alt="" class="img2">
+                    <p><b>轻缎光 【大子弹头】</b></p>
+                    <p>更大*更有光 新色来袭</p>
+                  <p><u><b><a href="index2.html">即可选购</a></b></u></p>
+                </div>
+                <div class="s1 xinpt">
+                    <img src="s4_3.avif" alt="" class="img2">
+                    <p><b>[无酒精] 爆改喷</b></p>
+                    <p>改妆不花妆一喷多用</p>
+                  <p><u><b><a href="index2.html">即可选购</a></b></u></p>
+                </div>
+            </div>
+            <div class="title2div xinpt6">刷具</div>
+            <div class="title2div xinpt7">限定</div>
+            <div class="title2div xinpt8">PRO</div>
+            <div class="title2div xinpt9">线下门店</div>
+
+            <br style="clear: both;">
+            
+
+        </div>
+
+
+        <div class="banner">
+            <img src="banner1.avif" alt="" id="bannerimg" width="1600" height="600">
+        </div>
+
+        <div class="box2">
+            <img src="text1.avif" alt="" width="1800px" style="margin-left: -100px;margin-bottom: -5px;">
+            <img src="body1.avif" alt="" width="1800px" style="margin-left: -100px;">
+           
+            <img src="text2.avif" alt="" width="1800px" style="margin-left: -100px;margin-bottom: -4px;">
+            <img src="body2.avif" alt="" width="1800px" style="margin-left: -100px;" class="body2img">
+
+            <img src="text3.avif" alt="" width="1800px" style="margin-left: -100px;margin-bottom: -4px;">
+            <img src="body3.avif" alt="" width="1800px" style="margin-left: -100px;" class="body3img">
+
+            <img src="text4.avif" alt="" width="1800px" style="margin-left: -100px;margin-bottom: -4px;">
+            <img src="body4.avif" alt="" width="1800px" style="margin-left: -100px;" class="body4img">
+
+            <img src="text5.avif" alt="" width="1800px" style="margin-left: -100px;margin-bottom: -5px;">
+            <img src="body5.avif" alt="" width="1800px" style="margin-left: -100px;" class="body5img">
+        </div>
+
+        <div>
+            <img src="foot.avif" alt="" style="margin-left: -100px;">
+        </div>
+        <style>
+            .di{
+                width: 100%;
+                height: 1000px;
+                background-color: black;
+                /* color: white; */
+                font-size: 25px;
+            }
+            .di img{
+                width: 280px;
+                height: 280px;
+                border-radius: 50%;
+                float: left;
+            }
+            .box3{
+                width: 250px;
+                height: 380px;
+                float: left;
+                color: white;
+            }
+            .ul{
+                color: gray;
+                font-size: 20px;
+                padding-inline-start: 0;
+                list-style-type: none;
+                float: left;
+                margin: 30px;
+                margin-left: 70px;
+                line-height: 45px;
+            }
+            .act li:not(:first-child){
+                float: left;
+            }
+            .ul li:hover{
+                color: white;
+            }
+        </style>
+
+
+        <div class="di">
+            <br>
+            <img src="che.png" alt="" align="left">
+            <div class="box3">
+                <br><br><br>
+                <span><big>顺丰速递</big><br>100%官方正品保障正价订单享免费顺丰速递</span>
+            </div>
+            <img src="liwu.png" alt="" align="left">
+            <div class="box3">
+                <br><br><br>
+                <span><big>定制礼赠</big><br>官方独家精美包装，满足送礼自用</span>
+            </div>
+            <img src="kefu.png" alt="" align="left">
+            <div class="box3">
+                <br><br><br>
+                <span><big>专属咨询</big><br>彩妆大师为您传递专业化妆技巧</span>
+            </div>
+
+            <br style="clear: both;">
+            <ul class="ul">
+                <li style="color: white;">门店地址</li>
+                <li>查找门店</li>
+                <li>魅可定制美妆</li>
+                <li style="color: white;">会员</li>
+                <li>会员中心</li>
+            </ul>
+
+            <ul class="ul">
+                <li style="color: white;">客户服务</li>
+                <li>联系我们</li>
+                <li>官方商城服务热线：</li>
+                <li>400-602-9566</li>
+                <li>专柜客户关怀热线：</li>
+                <li>400-821-1308</li>
+                <li>常见问题</li>
+                <li>订单情况</li>
+                <li>运输信息</li>
+                <li>赠品标签查询通道</li>
+                <li>商品标签查询通道</li>
+            </ul>
+
+            <ul class="ul">
+                <li style="color: white;">关于我们</li>
+                <li>品牌故事</li>
+                <li>M·A·C魅可官网购物五大理由</li>
+                <li>M·A·C魅可专业会员</li>
+                <li style="color: white;">公司地址</li>
+                <li style="color: white;">上海市静安区 延安中路1228号静安嘉里中心三座11楼</li>
+            </ul>
+
+            
+            <ul class="ul">
+                <li style="color: white;">账户</li>
+                <li>订单状态</li>
+                <li>我的收藏</li>
+               
+            </ul>
+
+            <ul class="ul act" >
+                <li style="color: white;">链接</li>
+                <li><img src="wechat.png" alt="" style="width: 65px;height: 50px;"></li>
+                <li><img src="webo.png" alt="" style="width: 65px;height: 60px;"></li>
+                <li><img src="zplogo.png" alt="" style="width: 80px;height: 80px;"></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+     
+        let j=0;
+        function lunbo(){
+            j++
+            if(j>=5){
+                j=1
+                console.log(j);
+                --j
+            }else{
+
+                $('#bannerimg').attr('src',`banner${j}.avif`)
+            }
+           
+         
+          
+            
+        }
+        setInterval(lunbo,1500)
+
+
+        $('#bannerimg').click(function(){
+            window.open('index2.html','_blank')
+        })
+
+
+        var y=0;
+        document.body.addEventListener('mousewheel',function(){
+             y=parseInt(window.scrollY)
+             console.log(y);
+             
+            if(y>=500){
+                $(".body2img").show()
+                $('.body2img').animate({top:"0"},1000,'swing')
+            }
+            if(y>1100){
+                $(".body3img").show()
+                $('.body3img').animate({top:"0"},1000,'swing')
+            }
+            if(y>1700){
+                $(".body4img").show()
+                $('.body4img').animate({top:"0"},1000,'swing')
+            }
+           
+        })
+       function removeY(){
+        if(y<500){
+                $(".body2img").hide()
+                $(".body3img").hide()
+                $(".body4img").hide()
+            }
+       }
+       removeY()
+
+
+
+
+
+
+
+
+
+
+
+
+       let i=0
+    setInterval(function(){
+        i++
+        if(i%2===0){
+            $('.titText').html('无瑕粉底液2.0，买30ML到手60ML * 赠品细则详情点击查看')
+        }else
+        if(i%2!=0){
+            $('.titText').html('全场下单任意正装顺丰包邮,部分偏远地区除外')
+        }
+       
+     
+    },2000)
+
+
+
+
+
+  
+        $(".xinpt1").hover(function(){
+            $('.slt1').show()
+            $('.slt2').hide(); $('.slt3').hide();$('.slt4').hide();$('.slt5').hide()
+           
+        })   
+
+        $('.slt1').hover(function(){
+        $('.slt1').show()
+        },function(){
+            $('.slt1').hide()
+        }
+    )
+
+    $(".xinpt2").hover(function(){
+            $('.slt2').show()
+            $('.slt1').hide()
+             $('.slt3').hide();$('.slt4').hide();$('.slt5').hide()
+        })   
+        
+        $('.slt2').hover(function(){
+        $('.slt2').show()
+        },function(){
+            $('.slt2').hide()
+        }
+    )
+
+    $(".xinpt3").hover(function(){
+            $('.slt3').show();$('.slt1').hide();$('.slt2').hide();$('.slt4').hide();$('.slt5').hide()
+        })   
+        
+        $('.slt3').hover(function(){
+        $('.slt3').show()
+        },function(){
+            $('.slt3').hide()
+        }
+    )
+
+
+
+    $(".xinpt4").hover(function(){
+            $('.slt4').show();$('.slt1').hide();$('.slt2').hide();$('.slt5').hide();$('.slt3').hide();
+        })   
+        
+        $('.slt4').hover(function(){
+             $('.slt4').show()
+        },function(){
+            $('.slt4').hide()
+        }
+    )
+
+
+    
+    $(".xinpt5").hover(function(){
+            $('.slt5').show();$('.slt1').hide();$('.slt2').hide();$('.slt3').hide();$('.slt4').hide();
+        })   
+        
+        $('.slt5').hover(function(){
+        $('.slt5').show()
+        },function(){
+            $('.slt5').hide()
+        }
+    )
+       
+       
+    </script>
+    
+</body>
+</html>

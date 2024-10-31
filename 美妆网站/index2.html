@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <style>
+        .box4{
+            width: 1300px;
+            height: 100px;
+            /* border: 1px solid black; */
+            font-weight: 600;
+            /* text-align: center; */
+            margin: 10px;
+            margin: 0 auto;
+           
+        }
+        .box4 span{
+            margin-left: 200px;
+        }
+        .sp{
+            width: 400px;
+            height: 500px;
+            /* border: 1px solid black; */
+            margin: 10px;
+            text-align: center;
+            float: left;
+            margin-left: 15px;
+        }
+        .btnGm{
+            width: 100px;
+            height: 35px;
+            border-radius: 25px;
+            background-color: black;
+            color: white;
+        }
+        .spym{
+            width: 1600px;
+            height: 1000px;
+        }
+        .imgBig{
+            transition: .5s;
+        }
+        .imgBig:hover{
+            transform: scale(1.2);
+        }
+        *{
+            user-select: none;
+        }
+        .fh{
+            width: 50px;
+            height: 200px;
+            writing-mode:vertical-rl;
+            background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            position: fixed;
+            letter-spacing: 1em;
+            right: 0;
+            
+        }
+        .title span:hover{
+            text-decoration: underline;
+        }
+        .active{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>  
+    <div class="box4">
+        <div>
+           
+            <img src="bannerkouhong.avif" alt="" width="1300px">
+            <p align="center">美国第一唇彩品牌*</p>
+            <p align="center">*资料来源:NPD集团/美国Prestige Beauty Total Measured Market，化妆品单位销售，2019年年度</p>
+        </div>
+        <div style="line-height: 100px;" class="title">
+            <span class="xuxa active">新品推荐</span>
+            <span class="xuxa">全部唇装</span>
+            <span class="xuxa">新品眼妆</span>
+            <span class="xuxa">新品底妆</span>
+        </div>
+        <div class="fh" >
+            ←返回首页
+        </div>
+        <script>
+            $(".fh").click(function(){
+                window.open('index.html','_blank')
+            })
+            
+        </script>
+        
+        <div class="spym spym1">
+
+
+            <div class="sp">
+                <img src="kouhong1.avif" class="imgBig" alt="" width="300" height="300">
+                <p>全新哑光 [大子弹头]</p>
+                <p style="font-size: 10px;">M·A·CXIMAL SILKY MATTE LIPSTICK</p>
+                <p>￥200</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="kouhong2.avif" class="imgBig" alt="" width="300" height="300">
+                <p>魅可水漾晶亮唇膏</p>
+                <p style="font-size: 10px;">LUSTREGLASS LIPSTICK</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="kouhong3.avif" alt="" class="imgBig" width="300" height="300">
+                <p>魅可丝缎柔雾唇膏</p>
+                <p style="font-size: 10px;">Powder Kiss Lipstick</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="kouhong4.avif" alt="" class="imgBig" width="300" height="300">
+                <p>魅可丝缎柔雾唇膏</p>
+                <p style="font-size: 10px;">Powder Kiss Lipstick</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+
+            <div class="sp">
+                <img src="kouhong5.avif" alt=""  class="imgBig"width="300" height="300">
+                <p>魅可新经典缎光唇膏</p>
+                <p style="font-size: 10px;">M·A·CXIMAL SILKY MATTE LIPSTICK</p>
+                <p>￥200</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="kouhong6.avif" alt=""  class="imgBig"width="300" height="300">
+                <p>魅可丝缎柔雾唇膏</p>
+                <p style="font-size: 10px;">Powder Kiss Lipstick</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="s8_1.avif" alt="" class="imgBig" width="300" height="300">
+                <p>魅可水漾晶亮唇膏</p>
+                <p style="font-size: 10px;">LUSTREGLASS LIPSTICK</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+            <div class="sp">
+                <img src="s8_2.avif" alt="" class="imgBig" width="300" height="300">
+                <p>魅可闪亮唇膏</p>
+                <p style="font-size: 10px;">M·A·CXIMAL SILKY MATTE LIPSTICK</p>
+                <p>￥200</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="s8_3.avif" alt="" class="imgBig" width="300" height="300">
+                <p>持久哑光液体唇膏</p>
+                <p style="font-size: 10px;">LUSTREGLASS LIPSTICK</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+        </div>
+        <br style="clear: both;">
+        
+
+
+        <div class="spym spym2" style="display: none;">
+
+
+            <div class="sp">
+                <img src="s5_1.jpg" class="imgBig" alt="" width="350" height="500" s>
+               
+            </div>
+
+            <div class="sp">
+                <img src="s5_2.avif" class="imgBig" alt="" width="350" height="500">
+               
+            </div>
+
+            <div class="sp">
+                <img src="s5_3.avif" alt="" class="imgBig" width="300" height="300">
+                <p>魅可丝缎柔雾唇膏</p>
+                <p style="font-size: 10px;">Powder Kiss Lipstick</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="s5_4.png" alt="" class="imgBig" width="300" height="300">
+                <p>魅可丝缎柔雾唇膏</p>
+                <p style="font-size: 10px;">Powder Kiss Lipstick</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+
+            <div class="sp">
+                <img src="s5_6.avif" alt=""  class="imgBig"width="300" height="300">
+                <p>魅可丝缎柔雾唇膏</p>
+                <p style="font-size: 10px;">M·A·CXIMAL SILKY MATTE LIPSTICK</p>
+                <p>￥200</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="kouhong6.avif" alt=""  class="imgBig"width="300" height="300">
+                <p>魅可丝缎柔雾唇膏</p>
+                <p style="font-size: 10px;">Powder Kiss Lipstick</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="s5_7.avif" alt="" class="imgBig" width="300" height="300">
+                <p>魅可水漾晶亮唇膏</p>
+                <p style="font-size: 10px;">LUSTREGLASS LIPSTICK</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+            <div class="sp">
+                <img src="s5_8.avif" alt="" class="imgBig" width="300" height="300">
+                <p>全新哑光 [大子弹头]</p>
+                <p style="font-size: 10px;">M·A·CXIMAL SILKY MATTE LIPSTICK</p>
+                <p>￥200</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="s5_9.avif" alt="" class="imgBig" width="300" height="300">
+                <p>魅可水漾晶亮唇膏</p>
+                <p style="font-size: 10px;">LUSTREGLASS LIPSTICK</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+        </div>
+
+        <div class="spym spym3" style="display: none;">
+
+
+            <div class="sp">
+                <img src="s6_1.avif" class="imgBig" alt="" width="350" height="500">
+               
+            </div>
+
+            <div class="sp">
+                <img src="s6_3.avif" class="imgBig" alt="" width="300" height="300">
+                <p>魅可时尚焦点小眼影</p>
+                <p style="font-size: 10px;">LUSTREGLASS LIPSTICK</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="s6_2.avif" alt="" class="imgBig" width="350" height="500">
+               
+            </div>
+
+            <div class="sp">
+                <img src="s6_4.avif" alt="" class="imgBig" width="300" height="300">
+                <p>魅可色柔滑眼线笔</p>
+                <p style="font-size: 10px;">Powder Kiss Lipstick</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+
+            <div class="sp">
+                <img src="s6_5.avif" alt=""  class="imgBig"width="300" height="300">
+                <p>魅可焦点持久眼彩爽</p>
+                <p style="font-size: 10px;">M·A·CXIMAL SILKY MATTE LIPSTICK</p>
+                <p>￥200</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="s6_6.avif" alt=""  class="imgBig"width="300" height="300">
+                <p>魅可丝缎柔雾唇膏</p>
+                <p style="font-size: 10px;">Powder Kiss Lipstick</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="s6_7.avif" alt="" class="imgBig" width="300" height="300">
+                <p>魅可造型眉粉组合</p>
+                <p style="font-size: 10px;">LUSTREGLASS LIPSTICK</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+            <div class="sp">
+                <img src="s6_4.avif" alt="" class="imgBig" width="300" height="300">
+                <p>全新哑光 [大子弹头]</p>
+                <p style="font-size: 10px;">M·A·CXIMAL SILKY MATTE LIPSTICK</p>
+                <p>￥200</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="s6_8.avif" alt="" class="imgBig" width="300" height="300">
+                <p>魅可水漾晶亮唇膏</p>
+                <p style="font-size: 10px;">LUSTREGLASS LIPSTICK</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+        </div>
+
+        <div class="spym spym3" style="display: none;">
+
+
+            <div class="sp">
+                <img src="s7_1.avif" class="imgBig" alt="" width="350" height="500">
+               
+            </div>
+
+            <div class="sp">
+                <img src="s7_3.avif" class="imgBig" alt="" width="300" height="300">
+                <p>魅可时尚透明胭脂</p>
+                <p style="font-size: 10px;">LUSTREGLASS LIPSTICK</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="s7_2.avif" alt="" class="imgBig" width="350" height="500">
+                <p>魅可可控妆喷雾</p>
+                <p style="font-size: 10px;">Powder Kiss Lipstick</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="s7_9.avif" alt="" class="imgBig" width="350" height="500">
+                
+            </div>
+
+
+            <div class="sp">
+                <img src="s7_5.avif" alt=""  class="imgBig"width="300" height="300">
+                <p>魅可定制五遮瑕乳</p>
+                <p style="font-size: 10px;">M·A·CXIMAL SILKY MATTE LIPSTICK</p>
+                <p>￥200</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="s7_6.avif" alt=""  class="imgBig"width="350" height="500">
+                
+            </div>
+
+            <div class="sp">
+                <img src="s7_8.avif" alt="" class="imgBig" width="300" height="300">
+                <p>魅可柔彩矿质腮红</p>
+                <p style="font-size: 10px;">LUSTREGLASS LIPSTICK</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+            <div class="sp">
+                <img src="s7_7.avif" alt="" class="imgBig" width="300" height="300">
+                <p>魅可定制无遮瑕修容盘</p>
+                <p style="font-size: 10px;">M·A·CXIMAL SILKY MATTE LIPSTICK</p>
+                <p>￥200</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+
+            <div class="sp">
+                <img src="s7_10.avif" alt="" class="imgBig" width="300" height="300">
+                <p>魅可柔光炫彩饼</p>
+                <p style="font-size: 10px;">LUSTREGLASS LIPSTICK</p>
+                <p>￥210</p>
+                <button class="btnGm">立即购买</button>
+            </div>
+        </div>
+      
+    </div>
+
+
+    
+    <script>
+        $('.btnGm').click(function(){
+            window.open('index3.html',"_blank")
+        })
+        $(".xuxa").click(function(){
+            $(this).addClass('active').siblings().removeClass('active')
+            console.log( $('.spym').eq($(this).index()).siblings('.spym'));
+            $('.spym').eq($(this).index()).show().siblings('.spym').hide()
+            
+        })
+       
+
+    </script>
+</body>
+</html>
